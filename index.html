@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Peers testing</title>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <p id="identifier">none</p>
+    <input type="text" id="connectionPeer" value="leobite_1">
+    <button id="connectButton">Connect</button>
+    <button id="sendPing" style="display:none" tabindex="-1">Pings</button>
+    <button id="stopPing" style="display:none" tabindex="-1">Stop</button>
+    
+    <canvas id="canvas" width="200" height="100" style="background: chartreuse;display:block;"></canvas>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
