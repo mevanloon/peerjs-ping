@@ -76,15 +76,11 @@ connectButton.addEventListener('click', function() {
     if(data.ping) {
       const ping = new Date()/1 - data.ping
       lastPingStamp = new Date()/1
-      // console.log('full round-trip in ms', ping)
       
       window.requestAnimationFrame(function() {
         ctx.clearRect(0,0,400,300)
-        ctx.fillText(ping, 50, 80)
+        ctx.fillText(ping + "ms", 50, 80)
       })
-      
-      // if(pinging)
-        // startPinging()
     }
   })
 })
